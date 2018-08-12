@@ -72,18 +72,15 @@ p {
 }
 
 .content {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: 0;
-    display: flex;
-    align-items: center;
+    position: relative;
+    display: block;
+    margin: 15px;
+    margin-top: 30px;
 }
 .bio {
-    max-width: 550px;
-    margin-left: 10vw;
+    width: 100%;
+    height: auto;
+    margin: 0;
 }
 .j-red {
     color: #E52453;
@@ -107,11 +104,29 @@ p {
     color: #0077B5;
 }
 #particles-js {
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     opacity: 0.25;
     z-index: -1;
+}
+
+/*DESKTOP STYLES*/
+@media only screen and (min-width : 768px) {
+    .bio {
+        max-width: 550px;
+        margin-left: 10vw;
+    }
+    .content {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+    }
 }
